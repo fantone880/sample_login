@@ -1,15 +1,17 @@
 <?php
 
-	$con =  mysqli_connect('localhost', 'root', '', 'centos');
+	include ('connection.php');
 
+	$fullname = $_POST['fullname'];
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 
-	$sql = "INSERT INTO login (username, password) VALUES ('$username', '$password')";
+	$sql = "INSERT INTO login (fullname, username, password) VALUES ('$fullname', '$username', '$password')";
 	
 
 	if(($username == "") && ($password == "")){
 		echo "Username and Password must be filled up!";
+		
 	}
 	else if($username == ""){
 		echo "Username must be filled up!";
