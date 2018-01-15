@@ -23,5 +23,11 @@
 	else{
 		$result = mysqli_query($con, $sql);
 		echo "Registration Successful";
+		if(!$result){
+			echo "Data not Insert";
+		}
+		else{
+			echo "Data successfully inserted";
+		}
 	}
 ?>

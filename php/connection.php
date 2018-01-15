@@ -1,5 +1,5 @@
 <?php
 	
-	$con = mysqli_connect('localhost','root','','centos');
+	$con = mysqli_connect('localhost', 'root', '', 'centos');
 
 ?>

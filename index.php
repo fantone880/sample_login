@@ -26,7 +26,7 @@
 					Password: <input type="password" placeholder="input password" name="password" class="input">
 				</div>
 				<div class="form-group">
-					<button class="button-btn">Register</button>
+					<input type="submit" name="submit" value="Register">
 				</div>
 			<form>
 		</div>
